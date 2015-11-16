@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Human()
+comment0.text=\r\n\ Constructor\ for\ object\ of\ class\ Human\ has\ characteristics\ of\ Creature,\ so\ must\ call\ the\ super\ method.\r\n
+comment1.params=hp
+comment1.target=void\ setHP(int)
+comment1.text=\r\n\ set\ hitPoints\ for\ Human\ object\ to\ be\ less\ than\ MAX_HP.\r\n\ @param\ hp\ The\ designated\ hitPoints\ but\ restricted\ to\ MAX_HP.\r\n
+comment2.params=str
+comment2.target=void\ setStrength(int)
+comment2.text=\r\n\ set\ strength\ for\ Human\ object\ to\ be\ less\ than\ MAX_HP.\r\n\ @param\ str\ The\ designated\ strength\ but\ restricted\ to\ MAX_STR.\r\n
+numComments=3

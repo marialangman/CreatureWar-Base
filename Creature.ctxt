@@ -1,6 +1,20 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Creature()
-comment1.params=
-comment1.target=int\ damage()
-numComments=2
+comment0.text=\r\n\ Constructor\ for\ a\ Creature\ object\ default\ values\ for\ hitpoints\ and\ strength\ to\ 10\ each.\r\n\ Create\ a\ Random\ object\ to\ be\ used\ by\ superclass\ and\ other\ subclasses\ extending\ from\ Creature.\r\n
+comment1.params=hp
+comment1.target=void\ setHP(int)
+comment1.text=\r\n\ setHP\ allows\ hitPoints\ to\ be\ set\r\n\ @param\ hp\ The\ designated\ hp,\ which\ cannot\ be\ less\ than\ MIN_HP.\r\n
+comment2.params=str
+comment2.target=void\ setStrength(int)
+comment2.text=\r\n\ setStrength\ allows\ strength\ to\ be\ set\r\n\ @param\ str\ The\ designated\ hp,\ which\ cannot\ be\ less\ than\ MIN_STR.\r\n
+comment3.params=
+comment3.target=int\ damage()
+comment3.text=\r\n\ damage\ is\ the\ potential\ damage\ the\ Creature\ created\ can\ inflict\ up\ to\ its\ strength\r\n\ @return\ A\ random\ number\ between\ 1\ and\ strength.\r\n
+comment4.params=
+comment4.target=int\ getHP()
+comment4.text=\r\n\ getHP\ returns\ hitPoints\r\n\ @return\ hitPoints\ The\ hitPoints.\r\n
+comment5.params=
+comment5.target=int\ getStrength()
+comment5.text=\r\n\ getStrength\ allows\ strength\ to\ be\ set\r\n\ @return\ strength\ The\ strength.\r\n
+numComments=6
