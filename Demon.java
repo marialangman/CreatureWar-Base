@@ -25,7 +25,7 @@ public class Demon extends Creature
         int chance = super.randomGenerator.nextInt(20);   //generates a set of numbers [0 to 19]
         int inheritedDamage = super.damage();          
         System.out.println("Chance is: " + chance);    //used to assert
-        if (chance == 0)  //any number from the sample space has a p(x=X), so choose any number as conditional
+        if (chance == 0)  //any number from the sample space has a p(X=x), so choose any number as conditional
         {
             System.out.println("Original damage: " + inheritedDamage);  //used for testing
             return inheritedDamage + 50;
