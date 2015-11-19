@@ -11,11 +11,22 @@ public class Human extends Creature
     private final int MAX_STR = 18;
 
     /**
-     * Constructor for object of class Human has characteristics of Creature, so must call the super method.
+     * No-arg Constructor for object of class Human has characteristics of Creature, so must call the super method.
      */
     public Human()
     {
         super();
+    }
+
+    /**
+     * Constructor for object of class Human with parameters calls the Creature constructor with same signature
+     * but then makes sure that hp and str are within range of maximum values.
+     */
+    public Human(int hp, int str)
+    {
+        super(hp, str);
+        setHP(hp);      
+        setStrength(str);
     }
 
     /**
@@ -26,8 +37,8 @@ public class Human extends Creature
     {
         if (hp > MAX_HP)
         {
-           System.out.println("Hitpoints for humans will be set at " + MAX_HP + ", maximum allowable.");
-           super.setHP(MAX_HP);
+            System.out.println("Hitpoints set at " + MAX_HP + ", maximum allowable.");  //for testing
+            super.setHP(MAX_HP);
         }
         else
         {
@@ -44,7 +55,7 @@ public class Human extends Creature
     {
         if (str > MAX_STR)
         {
-            System.out.println("Strength for humans will be set at " + MAX_STR + ", maximum allowable.");
+            System.out.println("Strength will be set at " + MAX_STR + ", maximum allowable.");  //for testing
             super.setStrength(MAX_STR);
         }
         else
@@ -53,5 +64,4 @@ public class Human extends Creature
         }
 
     }
-
 }

@@ -1,11 +1,14 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Human()
-comment0.text=\r\n\ Constructor\ for\ object\ of\ class\ Human\ has\ characteristics\ of\ Creature,\ so\ must\ call\ the\ super\ method.\r\n
-comment1.params=hp
-comment1.target=void\ setHP(int)
-comment1.text=\r\n\ set\ hitPoints\ for\ Human\ object\ to\ be\ less\ than\ MAX_HP.\r\n\ @param\ hp\ The\ designated\ hitPoints\ but\ restricted\ to\ MAX_HP.\r\n
-comment2.params=str
-comment2.target=void\ setStrength(int)
-comment2.text=\r\n\ set\ strength\ for\ Human\ object\ to\ be\ less\ than\ MAX_HP.\r\n\ @param\ str\ The\ designated\ strength\ but\ restricted\ to\ MAX_STR.\r\n
-numComments=3
+comment0.text=\r\n\ No-arg\ Constructor\ for\ object\ of\ class\ Human\ has\ characteristics\ of\ Creature,\ so\ must\ call\ the\ super\ method.\r\n
+comment1.params=hp\ str
+comment1.target=Human(int,\ int)
+comment1.text=\r\n\ Constructor\ for\ object\ of\ class\ Human\ with\ parameters\ calls\ the\ Creature\ constructor\ with\ same\ signature\r\n\ but\ then\ makes\ sure\ that\ hp\ and\ str\ are\ within\ range\ of\ maximum\ values.\r\n
+comment2.params=hp
+comment2.target=void\ setHP(int)
+comment2.text=\r\n\ set\ hitPoints\ for\ Human\ object\ to\ be\ less\ than\ MAX_HP.\r\n\ @param\ hp\ The\ designated\ hitPoints\ but\ restricted\ to\ MAX_HP.\r\n
+comment3.params=str
+comment3.target=void\ setStrength(int)
+comment3.text=\r\n\ set\ strength\ for\ Human\ object\ to\ be\ less\ than\ MAX_HP.\r\n\ @param\ str\ The\ designated\ strength\ but\ restricted\ to\ MAX_STR.\r\n
+numComments=4

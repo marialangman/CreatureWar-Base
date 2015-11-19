@@ -1,6 +1,6 @@
 
 /**
- * Elf is a Creature ubtype
+ * Elf is a Creature subtype
  * 
  * @author Maria Langman 
  * @version 2015.11.15
@@ -8,26 +8,36 @@
 public class Elf extends Creature
 {
     /**
-     * Constructor for object of class Elf has characteristics of Creature, so must call the super method.
+     * No-arg Constructor for object of class Elf has characteristics of Creature, so must call the super method.
      */
     public Elf()
     {
         super();
+        super.setDamage(magicalDamage());
     }
-
     /**
-     * damage method for Elf has a 10% chance to do magical damage, to return 2x the damage
+     * Constructor with parameters hp and str
+     */
+    public Elf(int hp, int str)
+    {
+        super(hp, str);
+        super.setDamage(magicalDamage());
+    }
+    /**
+     * magicalDamage method for Elf has a 10% chance to do magical damage, to return 2x the damage
+     * chance generates a number from a set  [0 to 10]
+     * If X=event of any number from the sample space then p(X=x), so choose any number as conditional
      * 
      * @return inheritedDamage (or 2*inheritedDamage, given 10% probability is fulfilled).
      */
-    public int damage()
+    public int magicalDamage()
     {
-        int chance = super.randomGenerator.nextInt(10);   //generates a set of numbers [0 to 9]
-        int inheritedDamage = super.damage();          
+        int chance = super.randomGenerator.nextInt(10);   
+        int inheritedDamage = super.getDamage();          
         //System.out.println("Chance is: " + chance);    //used to assert
-        if (chance == 0)  //any number from the sample space has a p(x=X), so choose any number as conditional
+        if (chance == 0) 
         {
-            System.out.println("Original damage: " + inheritedDamage);  //used for testin
+            //System.out.println("Original damage: " + inheritedDamage);  //used for testing
             return 2*inheritedDamage;
         }
         else

@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Demon()
-comment0.text=\r\n\ Constructor\ for\ object\ of\ class\ Demon\ has\ characteristics\ of\ Creature,\ so\ must\ call\ the\ super\ method.\r\n
-comment1.params=
-comment1.target=int\ damage()
-comment1.text=\r\n\ damage\ method\ for\ Demon\ has\ a\ 5%\ chance\ to\ do\ magical\ damage,\ to\ return\ damage\ +\ 50.\r\n\ @return\ inheritedDamage\ (or\ inheritedDamage\ +\ 50,\ given\ 5%\ probability\ is\ fulfilled).\ \r\n
-numComments=2
+comment0.text=\r\n\ Constructor\ for\ object\ of\ class\ Demon\ has\ characteristics\ of\ Creature,\ so\ must\ call\ the\ super\ method.\r\n\ Demon\ type\ has\ a\ 5%\ chance\ to\ do\ magical\ damage,\ which\ is\ 50\ +\ damage\ inherited\ from\ Creature.\r\n
+comment1.params=hp\ str
+comment1.target=Demon(int,\ int)
+comment2.params=
+comment2.target=int\ magicalDamage()
+comment2.text=\r\n\ magicalDamage\ method\ for\ Demon\ has\ a\ 5%\ chance\ to\ do\ magical\ damage,\ to\ return\ damage\ +\ 50.\r\n\ chance\ generates\ a\ number\ from\ a\ set\ \ [0\ to\ 20]\r\n\ If\ X\=event\ of\ any\ number\ from\ the\ sample\ space\ then\ p(X\=x),\ so\ choose\ any\ number\ as\ conditional\r\n\ \r\n\ @return\ inheritedDamage\ (or\ inheritedDamage\ +\ 50,\ given\ 5%\ probability\ is\ fulfilled).\ \r\n
+numComments=3
