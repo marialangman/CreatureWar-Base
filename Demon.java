@@ -31,6 +31,7 @@ public class Demon extends Creature
     private int magicalDamage()
     {
         int chance = super.randomGenerator.nextInt(20);   //generates a set of numbers [0 to 19]
+
         int inheritedDamage = super.getDamage();          
         //System.out.println("Chance is: " + chance);    //used for testing
         if (chance == 0)  //any number from the sample space has a p(X=x), so choose any number as conditional

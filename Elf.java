@@ -35,7 +35,7 @@ public class Elf extends Creature
         int chance = super.randomGenerator.nextInt(10);   
         int inheritedDamage = super.getDamage();          
         //System.out.println("Chance is: " + chance);    //used to assert
-        if (chance == 0) 
+        if (chance == 0)  //any number from the sample space has a p(X=x), so choose any number as conditional
         {
             //System.out.println("Original damage: " + inheritedDamage);  //used for testing
             return 2*inheritedDamage;
