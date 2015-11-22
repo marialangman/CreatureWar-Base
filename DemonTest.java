@@ -39,4 +39,12 @@ public class DemonTest
     public void tearDown()
     {
     }
+
+    @Test
+    public void testGetDamage()
+    {
+        Demon demon1 = new Demon(4, 4);
+        assertEquals(3, demon1.getDamage());
+    }
 }
+

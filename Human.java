@@ -37,7 +37,7 @@ public class Human extends Creature
     {
         if (hp > MAX_HP)
         {
-            System.out.println("Hitpoints set at " + MAX_HP + ", maximum allowable.");  //for testing
+           // System.out.println("Hitpoints set at " + MAX_HP + ", maximum allowable.");  //for testing
             super.setHP(MAX_HP);
         }
         else
@@ -55,7 +55,7 @@ public class Human extends Creature
     {
         if (str > MAX_STR)
         {
-            System.out.println("Strength will be set at " + MAX_STR + ", maximum allowable.");  //for testing
+            //System.out.println("Strength will be set at " + MAX_STR + ", maximum allowable.");  //for testing
             super.setStrength(MAX_STR);
         }
         else

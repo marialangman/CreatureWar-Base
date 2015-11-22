@@ -13,7 +13,6 @@ public class Elf extends Creature
     public Elf()
     {
         super();
-        super.setDamage(magicalDamage());
     }
     /**
      * Constructor with parameters hp and str
@@ -21,16 +20,15 @@ public class Elf extends Creature
     public Elf(int hp, int str)
     {
         super(hp, str);
-        super.setDamage(magicalDamage());
     }
     /**
-     * magicalDamage method for Elf has a 10% chance to do magical damage, to return 2x the damage
-     * chance generates a number from a set  [0 to 10]
-     * If X=event of any number from the sample space then p(X=x), so choose any number as conditional
+     * getDamage method for Elf overrides Creature's method, since Elf has a 10% chance to do 
+     * magical damage, to return 2x the damage.  chance generates a number from a set [0 to 9].
+     * If X=event of any number from the sample space then p(X=x); so choose any number as conditional.
      * 
      * @return inheritedDamage (or 2*inheritedDamage, given 10% probability is fulfilled).
      */
-    public int magicalDamage()
+    public int getDamage()
     {
         int chance = super.randomGenerator.nextInt(10);   
         int inheritedDamage = super.getDamage();          

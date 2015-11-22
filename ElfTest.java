@@ -39,4 +39,12 @@ public class ElfTest
     public void tearDown()
     {
     }
+
+    @Test
+    public void testGetDamage()
+    {
+        Elf elf1 = new Elf(4, 4);
+        assertEquals(3, elf1.getDamage());
+    }
 }
+

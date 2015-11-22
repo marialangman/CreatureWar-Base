@@ -1,5 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=CyberDemon()
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ CyberDemon\r\n
-numComments=1
+comment0.text=\r\n\ No-arg\ Constructor\ for\ CyberDemon\ object\r\n\r\n
+comment1.params=hp\ str
+comment1.target=CyberDemon(int,\ int)
+comment1.text=\r\n\ Constructor\ for\ CyberDemon\ object\ with\ parameters\ to\ set\ hitPoints\ and\ strength\r\n\ @param\ hp\ Use\ to\ set\ hitPoints\r\n\ @param\ str\ Use\ to\ set\ strength\r\n
+numComments=2

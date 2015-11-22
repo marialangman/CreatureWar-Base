@@ -41,11 +41,9 @@ public class CreatureTest
     }
 
     @Test
-    public void testHP()
+    public void testMinHPMinStr()
     {
-        Creature creature1 = new Creature();
-        creature1.setHP(5);
-        creature1.setHP(4);
+        Creature creature1 = new Creature(4, 4);
     }
 }
 

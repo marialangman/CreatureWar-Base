@@ -7,12 +7,21 @@
  */
 public class Balrog extends Demon
 {
-    //inherits from Demon
     /**
-     * Constructor for objects of class Balrog
+     * No-arg Constructor for Balrog object
+     *
      */
     public Balrog()
     {
-    super();
+        super();
+    }
+    /**
+     * Constructor for Balrog object with parameters to set hitPoints and strength
+     * @param hp Use to set hitPoints
+     * @param str Use to set strength
+     */
+    public Balrog(int hp, int str)
+    {
+        super(hp, str);
     }
 }

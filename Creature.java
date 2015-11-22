@@ -10,10 +10,9 @@ public class Creature
 {
     private int hitPoints;
     private int strength;
-    private int damage;
     private final int MIN_HP = 5;
     private final int MIN_STR = 5;
-    protected Random randomGenerator;   //to be shared by Creature types and subtypes
+    protected Random randomGenerator = new Random();   //to be shared by Creature types and subtypes
 
     /**
      * No-arg Constructor for a Creature object default values for hitpoints and strength to 10 each.
@@ -21,8 +20,6 @@ public class Creature
     public Creature(){
         hitPoints = 10;
         strength = 10;
-        randomGenerator = new Random();     //create the Random object for all to use
-        damage = randomGenerator.nextInt(strength)+1;
     }
     
     /**
@@ -34,8 +31,6 @@ public class Creature
     public Creature(int hp, int str){
         setHP(hp);      //makes hitPoints assignment to be within range
         setStrength(str);   //makes strength assignment to be within range
-        randomGenerator = new Random();     //create the Random object for all to use
-        damage = randomGenerator.nextInt(strength)+1;
     }
 
     /**
@@ -67,13 +62,6 @@ public class Creature
         else
             strength = str;
     }
-    /**
-     * setDamage method sets the damage
-     */
-    public void setDamage(int damage)
-    {
-        this.damage = damage;
-    }
 
     /**
      * getDamage is the potential damage the Creature can inflict up to its strength
@@ -81,7 +69,7 @@ public class Creature
      */
     public int getDamage(){
         //generate a random number from 1 to strength
-        return damage;
+        return randomGenerator.nextInt(strength)+1;
     }
     /**
      * getHP returns hitPoints
